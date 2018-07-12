@@ -25,6 +25,8 @@ for i, scan in enumerate(lidar.iter_scans()):
     print(scan)  # Print all the measured results.
     current_list = []
     for j, meas in enumerate(scan):
+        print("measurements")
+        print(meas)
         current_list.append(meas)  # Add the measured results to a new list.
     for i in current_list:
         if i == current_list[0]:  # Set previous distance and previous angle to first versions measured.
